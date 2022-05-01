@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] Coursenow คอร์สเรียนออนไลน์</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <script src="https://kit.fontawesome.com/7b837f95cc.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'></script>
+    <link href="~/lib/bootstrap/dist/css/LevelStyle.css" rel="stylesheet" />
+
+    <link rel="icon" type="image/x-icon" href="~/favicon-32x32.png" />
+
+</head>
+<body>
+    <header>
+
+        @*<nav class="navbar navbar-expand-md navbar-light bg-light" id="menu-top">
+                <div class="navbar-collapse collapse w-100 order-3 order-md-0 dual-collapse2">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                            <i class="fa fa-phone pr-2" aria-hidden="true"></i>(+66)660206967</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-envelope pr-2" aria-hidden="true"></i>
+                                gemisoftx@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse mx-auto order-0">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <img class="pr-2" src="~/lib/images/Preview_Icon/monitor.png" />
+                        </li>
+                        <li class="nav-item">
+                            <img src="~/lib/images/Preview_Icon/smartphone.png" />
+                        </li>
+                    </ul>
+                </div>
+            </nav>*@
+
+        <nav class="nav navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
+            <a class="navbar-brand d-flex align-items-center" href="#" style="font-size: 22px; font-weight: bold; color: #2B4162;">
+                <img src="~/lib/images/CourseNow_Logo.png" />
+                <span class="ml-2">COURSENOW</span>
+            </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar-content">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            หมวดหมู่
+                            <svg id="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Ajax</a></li>
+                            <li><a class="dropdown-item" href="#">Angular</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" style="color:orange" href="#">
+                                    C#
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">MVC</a></li>
+                                    <li><a class="dropdown-item" href="#">Core MVC</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">CSS 3</a></li>
+                            <li><a class="dropdown-item" href="#">Html 5</a></li>
+                            <li><a class="dropdown-item" href="#">Javascript</a></li>
+                            <li><a class="dropdown-item" href="#">Laravel</a></li>
+                            <li><a class="dropdown-item" href="#">Node JS</a></li>
+                            <li><a class="dropdown-item" href="#">React</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link" href="#">
+                            <span class="d-inline-block d-lg-none icon-width">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </span>สอนบน coursenow
+                        </a>
+                    </li>
+
+                    <li class="nav-item align-items-center">
+                        <div class="input-group rounded mx-auto my-2">
+                            <input type="text" size="40" class="form-control mr-sm-1" placeholder="ค้นหาบทเรียน" aria-label="Search" aria-describedby="search-addon" />
+                            <span class="input-group-text border-0" id="search-addon" style="background-color: #ffa62b;">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto mt-3 mt-lg-0">
+
+                    <li class="nav-item dropdown">
+
+                    <li class="nav-item px-lg-2 dropdown d-menu">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-circle-half-stroke"></i>
+                        </a>
+                        <div class="dropdown-menu shadow-sm sm-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="#">Dark Mode</a>
+                            <a class="dropdown-item" href="#">Light Mode</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item px-lg-2 dropdown d-menu">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                        <div class="dropdown-menu shadow-sm sm-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="#">ไทย</a>
+                            <a class="dropdown-item" href="#">English</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"> <a href="#" class="nav-link" data-abc="true">เข้าสู่ระบบ</a> </li>
+                    <li class="nav-item"> <button class="btn btn-warning mb-2"><i class="fa fa-user-plus"></i>ลงทะเบียน</button> </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="container-fluid">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container-fluid">
+        <!-- Footer -->
+        <footer class="bg-white text-center">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <button type="button" class="btn btn-outline-warning btn-rounded btn-icon mr-2"> <i class="fab fa-facebook-f"></i> </button>
+                    <button type="button" class="btn btn-outline-warning btn-rounded btn-icon mr-2"> <i class="fab fa-twitter"></i> </button>
+                    <button type="button" class="btn btn-outline-warning btn-rounded btn-icon mr-2"> <i class="fab fa-google"></i> </button>
+                    <button type="button" class="btn btn-outline-warning btn-rounded btn-icon mr-2"> <i class="fab fa-instagram"></i> </button>
+                    <button type="button" class="btn btn-outline-warning btn-rounded btn-icon mr-2"> <i class="fab fa-linkedin-in"></i> </button>
+                    <button type="button" class="btn btn-outline-warning btn-rounded btn-icon mr-2"> <i class="fab fa-github"></i> </button>
+                </section>
+                <section class="mb-3">
+                    <form action="">
+                        <!--Grid row-->
+                        <div class="row d-flex justify-content-center">
+                            <!--Grid column-->
+                            <div class="col-auto">
+                                <p class="pt-2">
+                                    <strong>ติดตาม Coursenow</strong>
+                                </p>
+                            </div>
+                            <div class="col-md-5 col-12">
+                                <div class="form-outline form-white mb-4">
+                                    <input type="email" id="form5Example2" class="form-control" placeholder="อีเมล์ของคุณ" />
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <button type="button" class="btn btn-outline-warning btn-icon mr-2">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                <section class="mb-4">
+                    <p>
+                        coursenow เป็นเว็บไซด์บทเรียนเกี่ยวกับการสร้าง web application ออนไลน์ มีคอร์สให้เลือกเรียนมากมายกว่า 1,000 คอร์ส สอนโดยผู้สอนมืออาชีพจากสถาบันชั้นนำของไทย จ่ายครั้งเดียว
+                        เรียนได้ตลอดชีพ สามารถเลือกตารางเรียนเองได้ ก่อตั้งเมื่อปี 2022
+                    </p>
+                </section>
+                <!-- Section: Text -->
+                <!-- Section: Links -->
+                <div class="row mb-3">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h6 class="text-uppercase">เกี่ยวกับเรา</h6>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#">ข้อมูลบริษัท</a>
+                            </li>
+                            <li>
+                                <a href="#">ติดต่อเรา</a>
+                            </li>
+                            <li>
+                                <a href="#">นโยบายความเป็นส่วนตัว</a>
+                            </li>
+                            <li>
+                                <a href="#">การตั้งค่าคุกกี้</a>
+                            </li>
+                            <li>
+                                <a href="#">ข้อกำหนด</a>
+                            </li>
+                            <li>
+                                <a href="#">Sitemap (แผนผังเว็บไซต์)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0"></div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0"></div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h6 class="text-uppercase">Mobile App</h6>
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/web/images/icons/download_on_the_app_store_badge_en.svg" alt="Download on the App Store" height="45">
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/web/images/icons/en_generic_rgb_wo_45.png" alt="Get it on Google Play" height="45">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <hr />
+                <div class="text-center p-3">
+                    <a>© 2022 Coursnow All rights reserved.</a>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
+<script>
+    $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+        if (!$(this).next().hasClass('show')) {
+            $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+        }
+        var $subMenu = $(this).next(".dropdown-menu");
+        $subMenu.toggleClass('show');
+
+
+        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+            $('.dropdown-submenu .show').removeClass("show");
+        });
+
+        return false
+    });
+</script>
+

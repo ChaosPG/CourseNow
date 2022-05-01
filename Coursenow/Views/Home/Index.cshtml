@@ -1,0 +1,410 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <link href="~/lib/bootstrap/dist/css/LevelStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="bg" style="background-color: #FFA62B;">
+        <div class="container">
+            <div class="row">
+                <div class="columnh">
+                    <div class="d-flex align-items-center mt-5 pr-5">
+                        @* Responsive Class For Text and Image *@
+                        <div class="py-5 py-lg-0 ml-5">
+                            <h4 class="text-white display-4 font-weight-bolder">คอร์สออนไลน์การสร้าง Application</h4>
+                            <p class="text-white-50 mb-4 lead">coursenow แหล่งรวมบทเรียนออนไลน์สำหรับการสร้าง Application ชนิดต่างๆ จากผู้สอนมืออาชีพ</p>
+                            <a class="btn btn-primary" href="#">เลือกบทเรียน</a>
+                            <a class="btn btn-success" href="#">คุณต้องการเป็นผู้สอนหรือไม่?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="columnh">
+                    <div class="d-flex align-items-center mt-3 mb-3">
+                        <span class="icon-sahpe icon-lg bg-light-warning rounded-circle text-center text-dark-warning fs-4">
+                            <img class="img-fluid" src="~/lib/images/corsenow_header_image.png" />
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shadow-sm p-3 mt-auto bg-white rounded" id="smallbarzindex">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="d-flex align-items-center">
+                        <span class="icon-sahpe icon-lg bg-light-warning rounded-circle text-center text-dark-warning fs-4">
+                            <button type="button" class="btn btn-info center-icon btn-icon disabled">
+                                <i class="fas fa-video"></i>
+                            </button>
+
+                        </span><div class="p-2"><h6 class="mb-0">1,000 online courses</h6><p class="mb-0">สนุกสนานกับบทเรียนมากมาย</p></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="d-flex align-items-center">
+                        <span class="icon-sahpe icon-lg bg-light-warning rounded-circle text-center text-dark-warning fs-4">
+                            <button type="button" class="btn btn-info center-icon btn-icon  disabled">
+                                <i class="fas fa-user-friends"></i>
+                            </button>
+                        </span><div class="p-2"><h6 class="mb-0">ผู้สอนมืออาชีพ</h6><p class="mb-0">เรียนกับผู้สอนมืออาชีพที่มีประสบการณ์สูง</p></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="d-flex align-items-center">
+                        <span class="icon-sahpe icon-lg bg-light-warning rounded-circle text-center text-dark-warning fs-4">
+                            <button type="button" class="btn btn-info center-icon btn-icon  disabled">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            </button>
+                        </span><div class="p-2"><h6 class="mb-0">จ่ายครั้งเดียวเรียนตลอดชีพ</h6><p class="mb-0">เข้าเรียนตามตารางที่คุณกำหนดเอง</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        @* mt = margin-top  mb = margin-bottom p=padding *@
+        <h4>ข้อเสนอสำหรับคุณ</h4>
+        <div id="carousel_01" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                        <div class="card">
+                            <img src="~/lib/images/slide_image/html_card_image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Html 5 สำหรับผู้เริ่มต้นพัฒนาเว็บ</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="font-weight-normal pr-3" style="color:orange">3/5</span>
+                                <div class="d-flex align-items-lg-start mt-1">
+                                    <p class="font-weight-bold pr-2">ระดับความยาก</p><p> | ระดับเริ่มต้น</p>
+                                </div>
+                                <p><a href="#" class="text-white bg-danger pl-1 pr-1">ขายดี</a></p>
+                                <hr />
+                                <h6>฿ 1,999</h6>
+                            </div>
+                        </div>
+
+                        <div class="card d-none d-md-block">
+                            <img src="~/lib/images/slide_image/css_card_image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">สุดยอดบทเรียน CSS 3 สำหรับผู้เริ่มต้น</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="font-weight-normal pr-3" style="color:orange">4/5</span>
+                                <div class="d-flex align-items-lg-start mt-1">
+                                    <p class="font-weight-bold pr-2">ระดับความยาก</p><p> | ระดับเริ่มต้น</p>
+                                </div>
+                                <p><a href="#" class="bg-white text-white pl-1 pr-1">ขายได้ปกติ</a></p>
+                                <hr />
+
+                                <h6>฿ 1,899</h6>
+                            </div>
+                        </div>
+                        <div class="card d-none d-md-block">
+                            <img src="~/lib/images/slide_image/jquery_card_image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">บทเรียนเบื้องต้น Jquery ในการพัฒนาเว็บ</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="font-weight-normal pr-3" style="color:orange">2/5</span>
+                                <div class="d-flex align-items-lg-start mt-1">
+                                    <p class="font-weight-bold pr-2">ระดับความยาก</p><p> | ระดับเริ่มต้น</p>
+                                </div>
+                                <p><a href="#" class="bg-white text-white pl-1 pr-1">ขายได้ปกติ</a></p>
+                                <hr />
+                                <h6>฿ 2,399</h6>
+                            </div>
+                        </div>
+                        <div class="card d-none d-md-block">
+                            <img src="~/lib/images/slide_image/ajax_card_image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ajax สำหรับนักพัฒนาเว็บมืออาชีพ</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="font-weight-normal pr-3" style="color:orange">3/5</span>
+                                <div class="d-flex align-items-lg-start mt-1">
+                                    <p class="font-weight-bold pr-2">ระดับความยาก</p><p> | ระดับกลาง</p>
+                                </div>
+                                <p><a href="#" class="bg-white text-white pl-1 pr-1">ขายได้ปกติ</a></p>
+                                <hr />
+                                <h6>฿ 2,499</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cards-wrapper">
+                        <div class="card">
+                            <img src="~/lib/images/slide_image/bootstrap_card_image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bootstrap สำหรับนักออกแบบเว็บ</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="font-weight-normal pr-3" style="color:orange">3/5</span>
+                                <div class="d-flex align-items-lg-start mt-1">
+                                    <p class="font-weight-bold pr-2">ระดับความยาก</p><p> | ระดับกลาง</p>
+                                </div>
+                                <p><a href="#" class="bg-white text-white pl-1 pr-1">ขายได้ปกติ</a></p>
+                                <hr />
+                                <h6>฿ 2,599</h6>
+                            </div>
+                        </div>
+                        <div class="card d-none d-md-block">
+                            <img src="~/lib/images/slide_image/jquery_card_image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Jquery ระดับสูงสำหรับนักพัฒนาเว็บ</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="font-weight-normal pr-3" style="color:orange">4/5</span>
+                                <div class="d-flex align-items-lg-start mt-1">
+                                    <p class="font-weight-bold pr-2">ระดับความยาก</p><p> | ระดับสูง</p>
+                                </div>
+                                <p><a href="#" class="text-white bg-danger pl-1 pr-1">ขายดี</a></p>
+                                <hr />
+                                <h6>฿ 3,999</h6>
+                            </div>
+                        </div>
+                        <div class="card d-none d-md-block">
+                            <img src="~/lib/images/slide_image/html_card_image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">ออกแบบเว็บระดับกลางด้วย Html 5</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="font-weight-normal pr-3" style="color:orange">3/5</span>
+                                <div class="d-flex align-items-lg-start mt-1">
+                                    <p class="font-weight-bold pr-2">ระดับความยาก</p><p> | ระดับกลาง</p>
+                                </div>
+                                <p><a href="#" class="bg-white text-white pl-1 pr-1">ขายได้ปกติ</a></p>
+                                <hr />
+                                <h6>฿ 2,599</h6>
+                            </div>
+                        </div>
+                        <div class="card d-none d-md-block">
+                            <img src="~/lib/images/slide_image/css_card_image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">ออกแบบเว็บระดับกลางด้วย CSS 3</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="font-weight-normal pr-3" style="color:orange">3/5</span>
+                                <div class="d-flex align-items-lg-start mt-1">
+                                    <p class="font-weight-bold pr-2">ระดับความยาก</p><p> | ระดับกลาง</p>
+                                </div>
+                                <p><a href="#" class="bg-white text-white pl-1 pr-1">ขายได้ปกติ</a></p>
+                                <hr />
+                                <h6>฿ 2,499</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel_01" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel_01" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        @* mt = margin-top  mb = margin-bottom p=padding *@
+        <h4>เป็นที่นิยม</h4>
+        <div id="carousel_02" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                        <div class="card">
+                            <img src="~/lib/images/slide_image/csharp_card_image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">C# สำหรับนักพัฒนาเริ่มต้น</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="font-weight-normal pr-3" style="color:orange">4/5</span>
+                                <div class="d-flex align-items-lg-start mt-1">
+                                    <p class="font-weight-bold pr-2">ระดับความยาก</p><p> | ระดับเริ่มต้น</p>
+                                </div>
+                                <p><a href="#" class="text-white bg-danger pl-1 pr-1">ขายดี</a></p>
+                                <hr />
+                                <h6>฿ 2,199</h6>
+                            </div>
+                        </div>
+                        <div class="card d-none d-md-block">
+                            <img src="~/lib/images/slide_image/react_card_image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">React สุดยอดบทเรียนสำหรับผู้เริ่มต้น</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="font-weight-normal pr-3" style="color:orange">3/5</span>
+                                <div class="d-flex align-items-lg-start mt-1">
+                                    <p class="font-weight-bold pr-2">ระดับความยาก</p><p> | ระดับเริ่มต้น</p>
+                                </div>
+                                <p><a href="#" class="bg-white text-white pl-1 pr-1">ขายได้ปกติ</a></p>
+                                <hr />
+                                <h6>฿ 2,399</h6>
+                            </div>
+                        </div>
+                        <div class="card d-none d-md-block">
+                            <img src="~/lib/images/slide_image/angular_card_image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">เริ่มต้นพัฒนาเว็บกับ Angular</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="font-weight-normal pr-3" style="color:orange">3/5</span>
+                                <div class="d-flex align-items-lg-start mt-1">
+                                    <p class="font-weight-bold pr-2">ระดับความยาก</p><p> | ระดับเริ่มต้น</p>
+                                </div>
+                                <p><a href="#" class="bg-white text-white pl-1 pr-1">ขายได้ปกติ</a></p>
+                                <hr />
+                                <h6>฿ 2,399</h6>
+                            </div>
+                        </div>
+                        <div class="card d-none d-md-block">
+                            <img src="~/lib/images/slide_image/nodejs_card_image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Nodejs กับการพัฒนาเว็บเบื้องต้น</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="font-weight-normal pr-3" style="color:orange">3/5</span>
+                                <div class="d-flex align-items-lg-start mt-1">
+                                    <p class="font-weight-bold pr-2">ระดับความยาก</p><p> | ระดับเริ่มต้น</p>
+                                </div>
+                                <p><a href="#" class="bg-white text-white pl-1 pr-1">ขายได้ปกติ</a></p>
+                                <hr />
+                                <h6>฿ 2,300</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cards-wrapper">
+                        <div class="card">
+                            <img src="~/lib/images/slide_image/lalavel_card_image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">เรื่มต้นพัฒนาเว็บด้วย Laravel</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="font-weight-normal pr-3" style="color:orange">2/5</span>
+                                <div class="d-flex align-items-lg-start mt-1">
+                                    <p class="font-weight-bold pr-2">ระดับความยาก</p><p> | ระดับเริ่มต้น</p>
+                                </div>
+                                <p><a href="#" class="bg-white text-white pl-1 pr-1">ยอดขายแย่</a></p>
+                                <hr />
+                                <h6>฿ 2,250</h6>
+                            </div>
+                        </div>
+                        <div class="card d-none d-md-block">
+                            <img src="~/lib/images/slide_image/react_card_image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">React สำหรับนักพัฒนาเว็บระดับกลาง</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="font-weight-normal pr-3" style="color:orange">3/5</span>
+                                <div class="d-flex align-items-lg-start mt-1">
+                                    <p class="font-weight-bold pr-2">ระดับความยาก</p><p> | ระดับกลาง</p>
+                                </div>
+                                <p><a href="#" class="bg-white text-white pl-1 pr-1">ขายได้ปกติ</a></p>
+                                <hr />
+                                <h6>฿ 3,299</h6>
+                            </div>
+                        </div>
+                        <div class="card d-none d-md-block">
+                            <img src="~/lib/images/slide_image/angular_card_image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">พัฒนาเว็บด้วย Angular ระดับกลาง</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="font-weight-normal pr-3" style="color:orange">4/5</span>
+                                <div class="d-flex align-items-lg-start mt-1">
+                                    <p class="font-weight-bold pr-2">ระดับความยาก</p><p> | ระดับกลาง</p>
+                                </div>
+                                <p><a href="#" class="text-white bg-danger pl-1 pr-1">ขายดี</a></p>
+                                <hr />
+                                <h6>฿ 3,350</h6>
+                            </div>
+                        </div>
+                        <div class="card d-none d-md-block">
+                            <img src="~/lib/images/slide_image/csharp_card_image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">C#.net สำหรับนักพัฒนาระดับกลาง</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="font-weight-normal pr-3" style="color:orange">4/5</span>
+                                <div class="d-flex align-items-lg-start mt-1">
+                                    <p class="font-weight-bold pr-2">ระดับความยาก</p><p> | ระดับกลาง</p>
+                                </div>
+                                <p><a href="#" class="text-white bg-danger pl-1 pr-1">ขายดี</a></p>
+                                <hr />
+                                <h6>฿ 3,250</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel_02" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel_02" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

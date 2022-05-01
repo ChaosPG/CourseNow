@@ -1,0 +1,565 @@
+﻿body {
+    color: #666666;
+    font-size: 14px;
+    font-family: Kanit;
+    line-height: 1.80857;
+    font-weight: 300;
+    margin: 0;
+
+}
+
+/*Footer Text*/
+
+small {
+    color: #666666;
+    font-size: 12px;
+    font-family: Kanit;
+    line-height: 1.80857;
+    font-weight: 300;
+    margin: 0;
+}
+
+.nav-link {
+    color: #666666;
+    font-size: 16px;
+    font-family: Kanit;
+    line-height: 1.80857;
+    font-weight: 300;
+}
+
+/*Replace For Full Width Page*/
+
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.height {
+    height: 80vh
+}
+
+.form {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+    .form .fa-search {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: #9ca3af
+    }
+
+    .form span {
+        position: absolute;
+        right: 17px;
+        top: 13px;
+        padding: 2px;
+        border-left: 1px solid #d1d5db
+    }
+
+.left-pan {
+    padding-left: 7px
+}
+
+    .left-pan i {
+        padding-left: 10px
+    }
+
+.form-input {
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px
+}
+
+    .form-input:focus {
+        box-shadow: none;
+        border: none
+    }
+
+/*profile thumbnail*/
+
+.rightnav {
+    float: none;
+    position: absolute;
+    top: 25%;
+    right: 2%;
+}
+
+.bg-custom-1 {
+    background-color: #85144b;
+}
+
+.bg-custom-2 {
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+
+/*Responsive Card*/
+
+/* Float four columns side by side */
+.cardcolumn {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.cardrow {
+    margin: 0 -5px;
+}
+
+    /* Clear floats after the columns */
+    .cardrow:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .cardcolumn {
+        width: 100%;
+        display: block;
+        left: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+/*search button custom*/
+/* info button */
+/*.btn-info {
+    background-color: #FFA62B;
+    color: #ffffff;*/
+    /*    border-color: #39b3d7;
+    border-radius: 25px;*/
+/*}
+
+    .btn-info:hover,
+    .btn-info:focus,
+    .btn-info:active {
+        background-color: #39b3d7;
+        color: #FFF;
+        border-color: #269abc;
+    }*/
+
+/*New Space of Menu Navbar*/
+
+.navbar-nav > li {
+    padding-left:12px;
+    padding-right:12px;
+}
+
+/*custom search bar*/
+
+.has-search {
+    position: relative;
+}
+
+    .has-search .form-control {
+        padding-right: 2.375rem;
+    }
+
+    .has-search .form-control-feedback {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: 2.375rem;
+        height: 2.375rem;
+        line-height: 2.375rem;
+        text-align: center;
+        pointer-events: none;
+        color: #aaa;
+        right: 0;
+        top: 0;
+    }
+.form-control {
+    font-size:14px;
+    font-weight: 300;
+}
+
+/*Font Awsome Circle*/
+
+.btn.btn-rounded {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+/*carousel card 4 column*/
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+    width:100%;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #FFA62B;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+    .card img {
+        height: 11em;
+    }
+}
+
+/*Top Menu 3 column*/
+.columntm {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: left;
+    width: 33.33%;
+    z-index: 5;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .columntm {
+        width: 100%;
+    }
+}
+
+/*Header Column*/
+.columnh {
+    margin-top: 0px;
+    margin-bottom:0px;
+    float: left;
+    width: 50%;
+    background-color: #FFA62B;
+    z-index:3;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .columnh {
+        width: 100%;
+    }
+}
+/*text and icon 3 column*/
+/* Create three equal columns that floats next to each other */
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/*Div For Row Space*/
+.top-space {
+    height: 40px;
+    background-color: #ffffff;
+}
+
+/*Make Z-index of div*/
+
+#smallbarzindex {
+    z-index: 2;
+}
+
+.bg-secondary {
+    z-index:-1;
+    background-color: #f5f4f8 !important;
+}
+
+/*Hr BG*/
+
+body {
+    background-color: #f5f4f8;
+}
+
+/* Dashed border */
+hr.dashed {
+    border-top: 3px dashed #bbb;
+}
+
+/* Dotted border */
+hr.dotted {
+    border-top: 3px dotted #bbb;
+}
+
+/* Solid border */
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+
+/* Rounded border*/
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+}
+
+/*line under top navbar*/
+
+#menu-top {
+    padding: 10px;
+    border-bottom: 3px solid #ffa62b;
+    background-color: #fff;
+}
+
+/*custom btn warning*/
+
+.btn-warning {
+    background-color: #ffa62b !important;
+    border-color: #ffa62b !important;
+}
+
+    .btn-warning:hover,
+    .btn-warning:active,
+    .btn-warning:visited,
+    .btn-warning:focus {
+        background-color: #c88221 !important;
+        border-color: #c88221 !important;
+    }
+
+/* Custom Navbar */
+.dropdown-toggle::after {
+    display: none;
+}
+
+.text-decoration-none {
+    text-decoration: none !important;
+}
+/* Font Awesome Icons have variable width. Added fixed width to fix that.*/
+.icon-width {
+    width: 2rem;
+}
+
+/*Vertical Line on Navbar*/
+
+.mycontent-left {
+    border-right: 1px dashed #333;
+}
+
+/* Multilevel Mega Menu*/
+
+
+/*@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.dropdown-menu.show {
+    -webkit-animation: fadeIn 0.3s alternate;*/
+    /* Safari 4.0 - 8.0 */
+    /*animation: fadeIn 0.3s alternate;
+}
+
+.nav-item.dropdown.dropdown-mega {
+    position: static;
+}
+
+    .nav-item.dropdown.dropdown-mega .dropdown-menu {
+        width: 90%;
+        top: auto;
+        left: 5%;
+    }
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .navbar-toggler .hamburger-toggle {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        z-index: 11;
+        float: right;
+    }
+
+        .navbar-toggler .hamburger-toggle .hamburger {
+            position: absolute;
+            transform: translate(-50%, -50%) rotate(0deg);
+            left: 50%;
+            top: 50%;
+            width: 50%;
+            height: 50%;
+            pointer-events: none;
+        }
+
+            .navbar-toggler .hamburger-toggle .hamburger span {
+                width: 100%;
+                height: 4px;
+                position: absolute;
+                background: #333;
+                border-radius: 2px;
+                z-index: 1;
+                transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), all 0.2s ease-in-out;
+                left: 0px;
+            }
+
+                .navbar-toggler .hamburger-toggle .hamburger span:first-child {
+                    top: 10%;
+                    transform-origin: 50% 50%;
+                    transform: translate(0% -50%) !important;
+                }
+
+                .navbar-toggler .hamburger-toggle .hamburger span:nth-child(2) {
+                    top: 50%;
+                    transform: translate(0, -50%);
+                }
+
+                .navbar-toggler .hamburger-toggle .hamburger span:last-child {
+                    left: 0px;
+                    top: auto;
+                    bottom: 10%;
+                    transform-origin: 50% 50%;
+                }
+
+            .navbar-toggler .hamburger-toggle .hamburger.active span {
+                position: absolute;
+                margin: 0;
+            }
+
+                .navbar-toggler .hamburger-toggle .hamburger.active span:first-child {
+                    top: 45%;
+                    transform: rotate(45deg);
+                }
+
+                .navbar-toggler .hamburger-toggle .hamburger.active span:nth-child(2) {
+                    left: 50%;
+                    width: 0px;
+                }
+
+                .navbar-toggler .hamburger-toggle .hamburger.active span:last-child {
+                    top: 45%;
+                    transform: rotate(-45deg);
+                }
+
+.icons {
+    display: inline-flex;
+    margin-left: auto;
+}
+
+    .icons a {
+        transition: all 0.2s ease-in-out;
+        padding: 0.2rem 0.4rem;
+        color: #ccc !important;
+        text-decoration: none;
+    }
+
+        .icons a:hover {
+            color: white;
+            text-shadow: 0 0 30px white;
+        }*/
+
+/*Card for Megamenu*/
+
+.cardmn {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+    width: 100%;
+}
+
+.btn.center-icon {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+/*social media circle*/
+
+.btn.btn-rounded {
+    border-radius: 50px;
+    width:40px;
+    height:40px;
+}
+
+/*New Submenu*/
+
+.dropdown-submenu {
+    position: relative;
+}
+
+    .dropdown-submenu a::after {
+        transform: rotate(-90deg);
+        position: absolute;
+        right: 6px;
+        top: .8em;
+    }
+
+    .dropdown-submenu .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-left: .1rem;
+        margin-right: .1rem;
+    }
+
+/*Dropdown Item Modifier*/
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 300;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+/* Star Rating*/
+.checked {
+    color: orange;
+}
+

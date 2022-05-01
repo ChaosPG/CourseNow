@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "XOrBjWpPAUncy3r04iN6bjyFPjql0/MxQHvX+ue145ZDY7zVSdE1k6aOIrQztoR/Bp7p4ms/aPkcCBtgzdpUdw==",
+  "success": true,
+  "projectFilePath": "D:\\DataFrom_500SSD_Projects\\.NetCore\\Coursenow\\Coursenow\\Coursenow.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ChaosPC\\.nuget\\packages\\bootstrap\\5.1.3\\bootstrap.5.1.3.nupkg.sha512",
+    "C:\\Users\\ChaosPC\\.nuget\\packages\\bootstrap.sass\\5.1.3\\bootstrap.sass.5.1.3.nupkg.sha512",
+    "C:\\Users\\ChaosPC\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.14\\microsoft.netcore.app.host.win-x64.5.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
